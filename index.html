@@ -1,0 +1,641 @@
+<html>
+<head>
+<meta charset="utf-8" />
+<meta name=”viewport” content=”width=device-width” />
+<title>Servicios Especializados HN</title>
+<script type="text/javascript" src="js/foundation.min.js"></script>
+<link rel="stylesheet" type="text/css" href="css/foundation.min.css">
+
+<link rel="stylesheet" type="text/css" href="css/normalize.css">
+<link rel="stylesheet" type="text/css" href="Fonts/style.css">
+<!-- Important Owl stylesheet -->
+<link rel="stylesheet" href="owl-carousel/owl.carousel.css">
+ 
+<!-- Default Theme -->
+<link rel="stylesheet" href="owl-carousel/owl.theme.css">
+
+<script src="assets/js/jquery-1.9.1.min.js"></script>
+ 
+<!-- Include js plugin -->
+<script src="owl-carousel/owl.carousel.js"></script>
+<script type="text/javascript" src="js/animatescroll.js"></script>
+<script type="text/javascript">
+	
+
+    $(document).ready(function() {
+     
+    $("#owl-demo").owlCarousel({
+     
+    navigation : true, // Show next and prev buttons
+    slideSpeed : 300,
+    paginationSpeed : 400,
+    singleItem:true
+     
+    // "singleItem:true" is a shortcut for:
+    // items : 1,
+    // itemsDesktop : false,
+    // itemsDesktopSmall : false,
+    // itemsTablet: false,
+    // itemsMobile : false
+     
+    });
+     
+    });
+
+</script>
+<style type="text/css">
+@font-face{
+  font-family: "fira";
+  src: url('Fonts/site/firasans-semibold-webfont.ttf'), url('Fonts/site/firasans-semibold-webfont.woff'), url('Fonts/site/firasans-semibold-webfont.eot'), url('Fonts/site/firasans-semibold-webfont.svg');
+}
+@font-face{
+  font-family: "league";
+  src: url('Fonts/menu/leaguegothic-regular-webfont.ttf'), url('Fonts/site/leaguegothic-regular-webfont.woff'), url('Fonts/site/leaguegothic-regular-webfont.eot'), url('Fonts/site/leaguegothic-regular-webfont.svg');
+}
+	body{
+		margin:0px;
+		font-size: 16px;
+		background:#DDD;
+    font-family: "fira";
+	}
+	.row{
+		max-width: 125em;
+	}
+
+
+    #owl-demo .item img{
+    display: block;
+    width: 100%;
+    height: auto;
+    }
+    #owl-demo .item{
+    	text-align: center;
+    }
+
+    .topbar{
+    	background-image: url('img/topbarbg.png');
+      position: relative;
+      z-index: 10000;
+      padding-bottom: 0.4rem;
+      box-shadow: 0px 3px 4px rgba(0,0,0,0.5);
+    }
+
+    .topopt{
+    	position: relative;
+    	top: 1.3em;
+    }
+    .topicons{
+      font-size: 4em;
+      color: #FFF;
+      background: none;
+      padding: 0.1em 0.3em 0.1em 0.3em;
+      position: relative;
+      top: -20px;
+      margin-bottom: 0.3rem;
+    }
+    .topicons:hover{
+      background: none;
+    }
+    .toplogo{
+      margin:0.1em 0em 0em 0.1em;
+    }
+    .menubtn{
+      position: fixed;
+      top:0.1rem;
+      right: -0.1rem;
+      display: none;
+      cursor: pointer;
+    }
+    .btnphone{
+      text-align: right;
+    }
+    .menuphones{
+    position: fixed;
+    background:url('img/circleanim.png');
+    background-size: 3rem;
+    background-repeat: no-repeat;
+    background-position:top right; 
+    height: 0rem;
+    top: 4.5rem;
+    z-index: 10500;
+    display: none;
+    text-align: right;
+    transition: all ease-in-out 1s;
+    -webkit-transition: all ease-in-out 1s;
+    box-shadow: 0px 0px 0px rgba(0,0,0,0);
+  }
+
+.contentstyle{
+  text-align: center;
+}
+.contentstyle p{
+  text-align: left;
+}
+
+
+.menuphoneslist{
+  color: #444;
+  font-size: 1.75rem;
+  padding-bottom: 0.35rem;
+  padding-top: 0.35rem;
+  display: none;
+  opacity: 0;
+  transition:all ease-in-out 400ms;
+  border-bottom: 2px solid #CCC;
+  -webkit-transition:all ease-in-out 400ms;
+}
+
+.menuphoneslist span{
+  font-family: "league";
+}
+.menuphoneslist:hover{
+  color: #FFF;
+  background: #444;
+}
+.contentlist{
+  text-align: left;
+}
+.container{
+  background:#555555;
+  width: 100%;
+  height: auto;
+}
+.maincontainer{
+  width: 100%;
+  height: 100%;
+  background: #232323;
+  box-shadow: 0px 0px 30px rgba(0,0,0,0.5) inset;
+  text-align: center;
+  overflow: hidden;
+  vertical-align: middle;
+}
+.incontainer{
+  background: url('img/spacebg.png');
+  background-position: center;
+  background-size: 100% 100%;
+  opacity:0;
+  width: 100%;
+  height:100%;
+  transition: all ease-in-out 500ms;
+  -webkit-transition: all ease-in-out 500ms;
+  display:none;
+}
+.barseparator{
+  height: 5.5rem;
+  display: none;
+}
+
+.glowlogo{
+  width: 30%;
+  height: auto;
+  position: relative;
+}
+.loader{
+  text-align: center;
+}
+.gifload{
+  position: relative;
+  transition: all ease-in-out 1s;
+  -webkit-transition: all ease-in-out 1s;
+}
+.arrowdown{
+  cursor: pointer;
+  width: 7.5%;
+  height: auto;
+}
+.aboutus{
+  min-height: 500px;
+  height: auto;
+  box-shadow: 0px 0px 30px rgba(0,0,0,0.5) inset;
+  background: url('img/bg1.png');
+  background-repeat: no-repeat;;
+  background-size: 100% 100%;
+  width: 100%;
+  position: relative;
+  color: #FFFFFF;
+  
+  text-align: center;
+}
+p{font-size: 1.6rem;}
+h4{color:#FFF;font-size: 1.8rem;}
+a{color:#FF6600;}
+.project{
+  min-height: 500px;
+  height: auto;
+  box-shadow: 0px 0px 30px rgba(0,0,0,0.5) inset;
+  background: url('img/bg2.png');
+  background-repeat: no-repeat;;
+  background-size: 100% 100%;
+  width: 100%;
+  color: #FFFFFF;
+}
+
+.contact{
+  min-height: 500px;
+  height: auto;
+  box-shadow: 0px 0px 30px rgba(0,0,0,0.5) inset;
+  background: url('img/bg3.png');
+  background-repeat: no-repeat;;
+  background-size: 100% 100%;
+  width: 100%;
+  color: #FFFFFF;
+}
+
+  @media all and (max-width: 1024px){
+  .topopt{display: none;}
+  .menubtn{display:block;}
+   .toplogo{height: 4rem;}
+}
+@media all and (max-width: 1024px){
+  .menuphones{
+    height: auto;
+    display: none;
+  }
+  .glowlogo{
+    width: 15rem;
+  }
+  .arrowdown{
+    width: 10%;
+  }
+  p{font-size: 1rem;}
+h4{color:#FFF;font-size: 1.3rem;}
+  
+}
+@media all and (min-width: 1024px){
+  .menuphoneslist{
+    display: none;
+    font-size:0rem;
+  }
+  
+  }
+
+  @media all and (max-width: 500px){
+  .toplogo{
+    height: 3rem;
+  }
+  p{font-size: 0.8rem;}
+h4{color:#FFF;font-size: 1rem;}
+  .menuphones{top:3.5rem;}
+  .arrowdown{
+    width: 15%;
+  }
+  }
+
+</style>
+
+<script type="text/javascript">
+var menustatus=false;
+var availinput=true;
+var winheight=parseInt;
+var actualscroll=parseInt;
+var winwidth=parseInt;
+var bgwidth=parseInt;
+var bgx=parseInt;
+var bgy=parseInt;
+var bgheight=parseInt;
+var winwidth=0;
+var bgwidth=0;
+var bgx=0;
+var bgy=0;
+var bgheight=0;
+var scrollmaincontainer;
+var containerneedheight;
+var resizing=false;
+winheight=0;
+actualscroll=0;
+$(document).ready(function()
+{
+$('body').ScrollTo(500);
+  });
+function showclosemenu(){
+  if (availinput==true) {
+    if (menustatus==false) {
+      showmenu();
+      menustatus=true;
+    }
+    else{
+      closemenu();
+      menustatus=false;
+    }
+  }
+
+}
+
+function showmenu(){
+  availinput=false;
+  document.getElementById('ptmenu').style.display='block';
+  document.getElementById('btn1').style.display='block';
+  document.getElementById('btn2').style.display='block';
+  document.getElementById('btn3').style.display='block';
+  document.getElementById('btn4').style.display='block';
+  document.getElementById('btn5').style.display='block';
+  window.setTimeout(function(){document.getElementById('ptmenu').style.backgroundSize='80rem';document.getElementById('ptmenu').style.backgroundPosition='center';},41);
+  window.setTimeout(function(){document.getElementById('btn1').style.opacity='1'},900);
+  window.setTimeout(function(){document.getElementById('btn2').style.opacity='1'},1000);
+  window.setTimeout(function(){document.getElementById('btn3').style.opacity='1'},1100);
+  window.setTimeout(function(){document.getElementById('btn4').style.opacity='1'},1200);
+  window.setTimeout(function(){document.getElementById('btn5').style.opacity='1'},1300);
+  window.setTimeout(function(){document.getElementById('ptmenu').style.transition='all ease-in-out 400ms';},1300);
+  window.setTimeout(function(){document.getElementById('ptmenu').style.boxShadow='0px 4px 4px rgba(0,0,0,0.65)'},1400);
+  window.setTimeout(function(){availinput=true;},1700);
+}
+function closemenu(){
+  availinput=false;
+  document.getElementById('ptmenu').style.boxShadow='0px 0px 0px rgba(0,0,0,0)';
+  window.setTimeout(function(){document.getElementById('ptmenu').style.transition='all ease-in-out 1s';},100);
+  window.setTimeout(function(){document.getElementById('btn5').style.opacity='0'},100);
+  window.setTimeout(function(){document.getElementById('btn4').style.opacity='0'},200);
+  window.setTimeout(function(){document.getElementById('btn3').style.opacity='0'},300);
+  window.setTimeout(function(){document.getElementById('btn2').style.opacity='0'},400);
+  window.setTimeout(function(){document.getElementById('btn1').style.opacity='0'},500);
+  window.setTimeout(function(){document.getElementById('ptmenu').style.backgroundPosition='top right';document.getElementById('ptmenu').style.backgroundSize='3rem';},600);
+  window.setTimeout(function(){document.getElementById('ptmenu').style.display='none';document.getElementById('btn1').style.display='none';document.getElementById('btn2').style.display='none';document.getElementById('btn3').style.display='none';document.getElementById('btn4').style.display='none';document.getElementById('btn5').style.display='none';availinput=true;},1600);
+}
+function checkopenmenu(){
+  winwidth=window.innerWidth;
+  changebgsizes();
+  if(winwidth>=1024){
+    document.getElementById('btn1').style.display='none';
+    document.getElementById('btn2').style.display='none';
+    document.getElementById('btn3').style.display='none';
+    document.getElementById('btn4').style.display='none';
+    document.getElementById('btn5').style.display='none';
+  }
+  else{
+    if(menustatus==true){
+      document.getElementById('btn1').style.display='block';
+    document.getElementById('btn2').style.display='block';
+    document.getElementById('btn3').style.display='block';
+    document.getElementById('btn4').style.display='block';
+    document.getElementById('btn5').style.display='block';
+    }
+  }
+}
+
+function checkscroll(){
+ 
+  actualscroll=document.body.scrollTop;
+  if (actualscroll>=document.getElementById('maincontainer').clientHeight) {
+    document.getElementById('topbar').style.position='fixed';
+    document.getElementById('topbar').style.top='0rem';
+    document.getElementById('barseparator').style.display='block';
+
+  }
+  else{
+    document.getElementById('topbar').style.position='relative';
+    document.getElementById('barseparator').style.display='none';
+  }
+}
+
+function showpresencover(){
+  winwidth=window.innerWidth;
+   if(winwidth>=1024){
+  document.getElementById('glowlogo').style.width='25%';
+  $( "#glowlogo" ).animate({
+opacity: 0, width: winwidth*0.32
+},{queue: false, duration: 1000});
+}
+else{
+
+    $( "#glowlogo" ).animate({
+opacity: 0, width: winwidth*0.5, width: "350px"
+},{queue: false, duration: 1000});
+}
+}
+
+function animgifload(){
+  $( "#gifload" ).animate({
+opacity: 0, width: "300px", height: "250px"
+}, {queue: false, duration: -1000});
+window.setTimeout(function(){showcover();},1300);
+}
+
+function showcover(){
+  scrollmaincontainer = document.getElementById('maincontainer').scrollHeight - document.getElementById('maincontainer').clientHeight;
+  if(scrollmaincontainer>1){
+    document.getElementById('maincontainer').style.height=((scrollmaincontainer+document.getElementById('maincontainer').clientHeight)+25)+'px';
+    document.getElementById('contaboutus').style.minHeight=document.getElementById('maincontainer').clientHeight+'px';
+     document.getElementById('contproject').style.minHeight=document.getElementById('maincontainer').clientHeight+'px';
+     document.getElementById('contcontact').style.minHeight=document.getElementById('maincontainer').clientHeight+'px';
+    winheight=scrollmaincontainer+document.getElementById('maincontainer').clientHeight;
+  }
+  else{
+    winheight=window.innerHeight;
+    document.getElementById('maincontainer').style.height=winheight+'px';
+    document.getElementById('contaboutus').style.minHeight=document.getElementById('maincontainer').clientHeight+'px';
+     document.getElementById('contproject').style.minHeight=document.getElementById('maincontainer').clientHeight+'px';
+     document.getElementById('contcontact').style.minHeight=document.getElementById('maincontainer').clientHeight+'px';
+  }
+  winwidth=window.innerWidth;
+  if(winwidth>=winheight*1.6){
+    bgx=winwidth;
+    bgy=winwidth/1.6;
+  }
+  else{
+    bgx=(winheight*1.6)
+    bgy=winheight
+  }
+  
+  document.getElementById('loadcontainer').style.display='none';
+  document.getElementById('incontainer').style.backgroundSize=bgx+'px '+bgy+'px';
+  document.getElementById('glowlogo').style.display='none';
+  document.getElementById('incontainer').style.display='block';
+  window.setTimeout(function(){document.getElementById('incontainer').style.opacity=1},100);
+  window.setTimeout(function(){document.getElementById('incontainer').style.transition='all ease-in-out 5s'},300);
+  window.setTimeout(function(){document.getElementById('incontainer').style.backgroundSize=(bgx*1.25)+'px '+(bgy*1.25)+'px'},400);
+}
+
+function changebgsizes(){
+  //se multiplica por 1.6 porque los tamaños originales de la imagen son: 1680x1050
+  //al dividirlos nos da 1.6, este numero nos servira para mantener la relación en el tamaño de la imagen de fondo
+  //en el tamaño de los diferentes dispositivos o al ajustar el tamaño de la ventana
+  //si trabajaramos con diferentes tamaños sería suficiente con dividir el ancho por el alto
+  winwidth=window.innerWidth;
+  scrollmaincontainer = document.getElementById('maincontainer').scrollHeight - document.getElementById('maincontainer').clientHeight;
+  if(scrollmaincontainer<1 && document.getElementById('maincontainer').clientHeight !== window.innerHeight){
+    winheight=window.innerHeight;
+    document.getElementById('maincontainer').style.height=winheight+'px';
+    document.getElementById('contaboutus').style.minHeight=document.getElementById('maincontainer').clientHeight+'px';
+     document.getElementById('contproject').style.minHeight=document.getElementById('maincontainer').clientHeight+'px';
+     document.getElementById('contcontact').style.minHeight=document.getElementById('maincontainer').clientHeight+'px';
+  }
+  else{
+     document.getElementById('maincontainer').style.height=((scrollmaincontainer+document.getElementById('maincontainer').clientHeight)+25)+'px';
+     document.getElementById('contaboutus').style.minHeight=document.getElementById('maincontainer').clientHeight+'px';
+     document.getElementById('contproject').style.minHeight=document.getElementById('maincontainer').clientHeight+'px';
+     document.getElementById('contcontact').style.minHeight=document.getElementById('maincontainer').clientHeight+'px';
+    winheight=scrollmaincontainer+document.getElementById('maincontainer').clientHeight;
+  }
+ 
+  
+  if(winwidth>=winheight*1.6){
+    //ejem: si el ancho de la ventana es 1000 y el alto 500 al multiplicar 500*1.6 es equivalente a 800
+    //realizará la siguiente operación:
+    bgx=winwidth;
+    bgy=winwidth/1.6;
+    //ancho de fondo es igual al ancho de pantalla en el caso mencionado es equivalente a 1000px 
+    //y el alto es igual al ancho de pantalla por 1.6 en este caso 500*1.6 es 800px
+    // si dividimos 800 entre 1.6 nos dara 500 asegurandonos que no se distorcionará el fondo
+  }
+  else{
+    bgx=(winheight*1.6)
+    bgy=winheight
+  }
+  window.setTimeout(function(){document.getElementById('incontainer').style.backgroundSize=(bgx*1.25)+'px '+(bgy*1.25)+'px'},400);
+  //multiplicamos el ancho 1.25 y el alto por 1.25 para que haga un acercamiento del 25% ejem
+  //si tuviéramos 1.50 haría un acercamiento del 50% si fuese 0.50 haría un alejamiento del 50%
+}
+
+function checkresizing(resizecounter){
+resizecounter--;
+if(resizecounter==0){
+  window.setTimeout(function(){checkresizing(resizecounter)},100)
+}
+else{
+  resizing=false;
+  changebgsizes();
+}
+}
+</script>
+<script>
+
+</script>
+</head>
+
+<body onresize="checkopenmenu()" onscroll="checkscroll();" onload="animgifload();showpresencover();changebgsizes();" >
+
+<div id="restbody">
+
+ 
+
+<div class="maincontainer" id="maincontainer">
+<img src="img/glowlogo.png" class="glowlogo" id="glowlogo" />
+<div class="loader" id="loadcontainer"><img class="gifload" id="gifload" src="img/load.gif" /></div>
+<div class="incontainer" id="incontainer">
+<img src="img/glowlogo.png"><br />
+<img src="img/theme.png"><br />
+<img onclick="$('.aboutus').animatescroll({scrollspeed:2500});" src="img/downarrow.png" class="arrowdown" />
+</div>
+</div>
+  
+ 
+<div class="barseparator" id="barseparator"></div>
+  <div class="row topbar" id="topbar">
+    <div class="large-3 columns">
+      <img class="toplogo" src="img/newlogo.png"/>
+    </div>
+    <div class="large-9 columns btnphone">
+    <img src="img/menubtn.png" class="menubtn" onclick="showclosemenu();">
+      <ul class="right button-group topopt" >
+      <li><a href="#" class="button icon-about topicons" onclick="$('.aboutus').animatescroll({scrollspeed:2500});"></a></li>
+      <li><a href="#" class="button icon-proyectos topicons" onclick="$('#contproject').animatescroll({scrollspeed:2500});"></a></li>
+      <li><a href="#" class="button icon-Blog topicons"></a></li>
+      <li><a href="#" class="button icon-contact topicons" onclick="$('#contcontact').animatescroll({scrollspeed:2500});"></a></li>
+      <li><a href="#" class="button icon-cotiz topicons"></a></li>
+      </ul>
+     </div>
+   </div>
+  
+ 
+ <div class="large-12 columns menuphones" id="ptmenu">
+ <div class="large-12 columns contentlist">
+   <div class="large-12 columns icon-about menuphoneslist" id="btn1" onclick="$('.aboutus').animatescroll({scrollspeed:2500});showclosemenu();"> <span>Nosotros</span></div>
+   <div class="large-12 columns icon-proyectos menuphoneslist" onclick="$('#contproject').animatescroll({scrollspeed:2500});showclosemenu();" id="btn2"><span> Proyectos</span></div>
+   <div class="large-12 columns icon-blog menuphoneslist" id="btn3"><span> Blog</span></div>
+   <div class="large-12 columns icon-contact menuphoneslist" onclick="$('#contcontact').animatescroll({scrollspeed:2500});showclosemenu();" id="btn4"><span> Contacto</span></div>
+   <div class="large-12 columns icon-cotiz menuphoneslist" id="btn5"><span> Cotizaciones</span></div>
+ </div>
+</div> 
+
+
+
+
+
+
+
+
+<div class="row">
+<div class="large-12 columns aboutus" id="contaboutus">
+<br /><br /><br /><br />
+<div class="large-5 columns"><span><img src="img/img2.png"/></span></div>
+<div class="large-7 columns">
+<h4>Nuestra Pasi&oacute;n!</h4>
+      <p>Somos dedicados desarrolladores web, comprometidos a ofrecer el mejor servicio que usted pueda obtener y garantizarle total satisfacci&oacute;n y seguridad, en resumen... <em><strong>somos superh&eacute;roes!</strong></em></p>
+      <p><a href="#">Leer M&aacute;s...</a></p>
+</div>
+<div class="large-12 columns">
+<img onclick="$('#contproject').animatescroll({scrollspeed:2500});" src="img/downarrow.png" class="arrowdown" />
+</div>
+</div>
+</div>
+
+
+<div class="row">
+<div class="large-12 columns project" id="contproject">
+<br /><br /><br /><br />
+<div class="large-5 columns" align="center"><span><img src="img/img4.png"/></span></div>
+<div class="large-7 columns">
+ <h4>&iquest;Que sitios web hemos disfrutado desarrollar?</h4>
+      <p>Hemos tenido el placer de desarrollar sitios web como <a href="http://honduras.travel" target="_blank">Honduras Travel</a>, <em><strong>el sitios oficial de turismo en Honduras.</strong></em></p>
+      <p>Lo invitamos a que vea a&uacute;n m&aacute;s de los sitios web que hemos desarrollado <a href="#">Leer M&aacute;s...</a></p>
+</div>
+<div class="large-12 columns" align="center">
+<img onclick="$('#contcontact').animatescroll({scrollspeed:2500});" src="img/downarrow.png" class="arrowdown" />
+</div>
+</div>
+</div>
+
+<div class="row">
+<div class="large-12 columns contact" id="contcontact">
+<br /><br /><br /><br />
+<div class="large-4 columns" align="center"><span><img src="img/c1.png"/></span><br><span>999-999-99</span></div>
+<div class="large-4 columns" align="center"><span><img src="img/c2.png"/></span><br><span>gbelot2003@gmail.com</span></div>
+<div class="large-4 columns" align="center"><span><img src="img/c3.png"/></span><br><span>Dep... col... calle...</span></div>
+<div class="large-12 columns" align="center">
+<img onclick="$('#foot').animatescroll({scrollspeed:2500});" src="img/downarrow.png" class="arrowdown" />
+</div>
+</div>
+</div>
+
+
+  
+<div class="row" id="foot">
+    <div class="large-12 columns">
+    
+      <div class="panel">
+        <h4>Puede asegurar el futuro web de su empresa con nosotros!</h4>
+            
+        <div class="row">
+          <div class="large-9 columns">
+            <p>Nos encantar&iacute;a seguir en <em><strong>contacto</strong></em> con usted!</p>
+          </div>
+          <div class="large-3 columns">
+            <a href="#" class="radius button right">Cont&aacute;ctenos</a>
+          </div>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+ 
+   
+  
+  <footer class="row">
+    <div class="large-12 columns">
+      <hr/>
+      <div class="row">
+        <div class="large-6 columns">
+          <p>&copy;2014 Servicios especializados</p>
+        </div>
+        <div class="large-6 columns">
+          <ul class="inline-list right">
+            <li><a href="#">Acuerdo de usuario</a></li>
+          </ul>
+        </div>
+      </div>
+    </div> 
+  </footer>
+    
+</div>
+</body>
+</html>

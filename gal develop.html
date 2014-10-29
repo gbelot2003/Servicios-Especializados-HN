@@ -1,0 +1,106 @@
+<html>
+<head>
+<title>Gallery</title>
+<style type="text/css">
+	.imgallery{
+
+	}
+	.gallerycontainer-rfvcde{
+		text-align: center;
+		width: 100%;
+		min-height:350px;
+		overflow: hidden;
+		height: 350px;
+	}
+	.gallerycontainer-rfvcde img{
+		position: absolute;
+		display: block;
+		width: auto;
+		height: auto;
+	}
+	.galimgcontainer-adcdxc{
+		min-height:350px;
+		position: relative;
+	}
+</style>
+<script src="assets/js/jquery-1.9.1.min.js"></script>
+<script type="text/javascript">
+
+</script>
+<script type="text/javascript">
+var galimgcounter=parseInt;
+var galimgfoundcounter=parseInt;
+var galimgwidth=new Array();
+var galimgheight=new Array();
+var galaspectrelation=new Array();
+var galwidth="720px";
+var galheight="480px";
+var galelemscounter=parseInt;
+var galproperties;
+galimgfoundcounter=0;
+galelemscounter=0;
+$( document ).ready(function() {
+		window.setTimeout(function(){initgal()},100);
+});
+function initgal(){
+	galimgcounter=document.getElementsByClassName('gallerycontainer-rfvcde')[0].getElementsByTagName("img").length;
+	if (galimgcounter>1){
+		galproperties=document.getElementsByClassName('gallerycontainer-rfvcde')[0].getElementsByTagName("input")[0].value;
+
+		//gallery width
+		if(galproperties.indexOf("width:")>0){
+			alert(galproperties.indexOf(";" , galproperties.indexOf("width:")));
+			if(galproperties.indexOf(";" , galproperties.indexOf("width:"))<0){
+				galwidth=galproperties.substring(galproperties.indexOf("width:")+6, galproperties.length);
+			}
+			else{
+			galwidth=galproperties.substring(galproperties.indexOf("width:")+6, galproperties.indexOf(";" , galproperties.indexOf("width:")));
+		}
+		alert(galwidth);
+
+
+
+			$(".gallerycontainer-rfvcde").style.width=galwidth;
+		}
+		startloopelems();
+	}
+	else{
+		galimgfoundcounter++;
+		if(galimgfoundcounter<51){
+		window.setTimeout(function(){initgal()},100);
+		}
+		else{
+			alert('We are truly sorry, but we could not find any image for the gallery');
+		}
+	}
+	if (galimgcounter==1){
+		alert('just found one image, at least two images are needed')
+	}
+}
+function startloopelems(){
+	galimgwidth[galelemscounter] = $(".gallerycontainer-rfvcde img")[galelemscounter].width;
+	galimgheight[galelemscounter] = $(".gallerycontainer-rfvcde img")[galelemscounter].height;
+	 $(".gallerycontainer-rfvcde img")[galelemscounter].style.padding='0rem';
+	 $(".gallerycontainer-rfvcde img")[galelemscounter].style.padding='0rem';
+	galaspectrelation[galelemscounter]=(galimgwidth[galelemscounter]/galimgheight[galelemscounter]);
+	if (galelemscounter<galimgcounter) {
+		galelemscounter++;
+		startloopelems();
+	}
+}
+</script>
+</head>
+
+<body>
+<div class="gallerycontainer-rfvcde">
+<div class="galimgcontainer-adcdxc">
+	<img src="gal/img1.png">
+	<img src="gal/img2.png">
+	<img src="gal/img3.png">
+	</div>
+	<div class="galcontrols-sdfjb"></div>
+	<input type="hidden" value=" width:100%; height:100%;">
+</div>
+
+</body>
+</html>

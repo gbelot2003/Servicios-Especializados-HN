@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="210mm"
+   height="297mm"
+   id="svg2"
+   version="1.1"
+   inkscape:version="0.48+devel r10550"
+   sodipodi:docname="Documento nuevo 1">
+  <defs
+     id="defs4">
+    <filter
+       inkscape:collect="always"
+       id="filter795"
+       x="-0.44377429"
+       width="1.8875486"
+       y="-0.44377429"
+       height="1.8875486">
+      <feGaussianBlur
+         inkscape:collect="always"
+         stdDeviation="7.4713288"
+         id="feGaussianBlur797" />
+    </filter>
+    <filter
+       inkscape:collect="always"
+       id="filter812"
+       x="-0.40258318"
+       width="1.8051664"
+       y="-1.0653481"
+       height="3.1306962">
+      <feGaussianBlur
+         inkscape:collect="always"
+         stdDeviation="23.843467"
+         id="feGaussianBlur814" />
+    </filter>
+  </defs>
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="0.49497475"
+     inkscape:cx="-382.75"
+     inkscape:cy="-598.51494"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     inkscape:window-width="1280"
+     inkscape:window-height="658"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1" />
+  <metadata
+     id="metadata7">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Capa 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <rect
+       style="fill:#232323;fill-opacity:1;fill-rule:evenodd;stroke:none"
+       id="rect10"
+       width="640"
+       height="244.84261"
+       x="-369.5816"
+       y="1247.2816" />
+    <path
+       sodipodi:type="arc"
+       style="fill:#ffffff;fill-opacity:1;stroke:none"
+       id="path783"
+       sodipodi:cx="-200.01021"
+       sodipodi:cy="1436.2201"
+       sodipodi:rx="20.203051"
+       sodipodi:ry="20.203051"
+       d="m -179.80716,1436.2201 a 20.203051,20.203051 0 1 1 -40.4061,0 20.203051,20.203051 0 1 1 40.4061,0 z"
+       transform="translate(26.263967,-51.517782)"
+       inkscape:export-filename="L:\Servicios Especializados 3.0\img\whiteball.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <path
+       d="m -179.80716,1436.2201 a 20.203051,20.203051 0 1 1 -40.4061,0 20.203051,20.203051 0 1 1 40.4061,0 z"
+       sodipodi:ry="20.203051"
+       sodipodi:rx="20.203051"
+       sodipodi:cy="1436.2201"
+       sodipodi:cx="-200.01021"
+       id="path785"
+       style="fill:#ffffff;fill-opacity:1;stroke:none;filter:url(#filter795)"
+       sodipodi:type="arc"
+       transform="matrix(1.1686682,0,0,1.2610275,216.57297,-406.15824)"
+       inkscape:export-filename="L:\Servicios Especializados 3.0\img\whiteblurball.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <rect
+       style="fill:#232323;fill-opacity:1;stroke:none"
+       id="rect799"
+       width="200"
+       height="200"
+       x="-234.35539"
+       y="1580.672" />
+    <path
+       style="opacity:0.40265485;fill:#ffffff;fill-opacity:1;stroke:none;filter:url(#filter812)"
+       d="m -198.57143,1685.2194 129.285712,0 6.428571,53.7142 c -50.164653,-24.7631 -93.202743,-26.206 -142.142853,0 z"
+       id="rect801"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="ccccc"
+       transform="matrix(0.82184022,0,0,0.82184022,-20.289258,290.73746)"
+       inkscape:export-filename="L:\Servicios Especializados 3.0\img\blur floor.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+  </g>
+</svg>
