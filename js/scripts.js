@@ -32,10 +32,11 @@ var containerneedheight;
 var resizing=false;
 winheight=0;
 actualscroll=0;
-$(document).ready(function()
-{
-$('body').ScrollTo(500);
-  });
+
+$(document).ready(function(){
+    $('body').ScrollTo(500);
+});
+
 function showclosemenu(){
   if (availinput==true) {
     if (menustatus==false) {
@@ -81,22 +82,23 @@ function closemenu(){
   window.setTimeout(function(){document.getElementById('ptmenu').style.display='none';document.getElementById('btn1').style.display='none';document.getElementById('btn2').style.display='none';document.getElementById('btn3').style.display='none';document.getElementById('btn4').style.display='none';document.getElementById('btn5').style.display='none';availinput=true;},1600);
 }
 function checkopenmenu(){
-  winwidth=window.innerWidth;
-  changebgsizes();
-  if(winwidth>=1024){
-    document.getElementById('btn1').style.display='none';
-    document.getElementById('btn2').style.display='none';
-    document.getElementById('btn3').style.display='none';
-    document.getElementById('btn4').style.display='none';
-    document.getElementById('btn5').style.display='none';
+    winwidth=window.innerWidth;
+    changebgsizes();
+    if(winwidth>=1024){
+        document.getElementById('btn1').style.display='none';
+        document.getElementById('btn2').style.display='none';
+        document.getElementById('btn3').style.display='none';
+        document.getElementById('btn4').style.display='none';
+        document.getElementById('btn5').style.display='none';
   }
   else{
+
     if(menustatus==true){
-      document.getElementById('btn1').style.display='block';
-    document.getElementById('btn2').style.display='block';
-    document.getElementById('btn3').style.display='block';
-    document.getElementById('btn4').style.display='block';
-    document.getElementById('btn5').style.display='block';
+        document.getElementById('btn1').style.display='block';
+        document.getElementById('btn2').style.display='block';
+        document.getElementById('btn3').style.display='block';
+        document.getElementById('btn4').style.display='block';
+        document.getElementById('btn5').style.display='block';
     }
   }
 }
@@ -216,12 +218,12 @@ function changebgsizes(){
 }
 
 function checkresizing(resizecounter){
-resizecounter--;
-if(resizecounter==0){
-  window.setTimeout(function(){checkresizing(resizecounter)},100)
-}
-else{
-  resizing=false;
-  changebgsizes();
-}
+    resizecounter--;
+    if(resizecounter==0){
+      window.setTimeout(function(){checkresizing(resizecounter)},100)
+    }
+    else{
+      resizing=false;
+      changebgsizes();
+    }
 }
