@@ -120,25 +120,25 @@ function checkscroll(){
 
 function showpresencover(){
   winwidth=window.innerWidth;
-   if(winwidth>=1024){
-  document.getElementById('glowlogo').style.width='25%';
-  $( "#glowlogo" ).animate({
-opacity: 0, width: winwidth*0.32
-},{queue: false, duration: 1000});
-}
-else{
+    if(winwidth>=1024){
+        document.getElementById('glowlogo').style.width='25%';
+        $("#glowlogo").animate({
+            opacity: 0, width: winwidth*0.32
+        },
+            {queue: false, duration: 1000});
+    } else{
 
-    $( "#glowlogo" ).animate({
-opacity: 0, width: winwidth*0.5, width: "350px"
-},{queue: false, duration: 1000});
-}
+        $( "#glowlogo" ).animate({
+            opacity: 0, width: winwidth*0.5, width: "350px"
+        },{queue: false, duration: 1000});
+    }
 }
 
 function animgifload(){
   $( "#gifload" ).animate({
-opacity: 0, width: "300px", height: "250px"
-}, {queue: false, duration: -1000});
-window.setTimeout(function(){showcover();},1300);
+    opacity: 0, width: "300px", height: "250px"
+    },{queue: false, duration: -1000});
+    window.setTimeout(function(){showcover();},1300);
 }
 
 function showcover(){
@@ -157,23 +157,23 @@ function showcover(){
      document.getElementById('contproject').style.minHeight=document.getElementById('maincontainer').clientHeight+'px';
      document.getElementById('contcontact').style.minHeight=document.getElementById('maincontainer').clientHeight+'px';
   }
-  winwidth=window.innerWidth;
-  if(winwidth>=winheight*1.6){
-    bgx=winwidth;
-    bgy=winwidth/1.6;
-  }
-  else{
-    bgx=(winheight*1.6)
-    bgy=winheight
-  }
+
+    winwidth=window.innerWidth;
+    if(winwidth>=winheight*1.6){
+        bgx=winwidth;
+        bgy=winwidth/1.6;
+    } else{
+        bgx=(winheight*1.6)
+        bgy=winheight
+    }
   
-  document.getElementById('loadcontainer').style.display='none';
-  document.getElementById('incontainer').style.backgroundSize=bgx+'px '+bgy+'px';
-  document.getElementById('glowlogo').style.display='none';
-  document.getElementById('incontainer').style.display='block';
-  window.setTimeout(function(){document.getElementById('incontainer').style.opacity=1},100);
-  window.setTimeout(function(){document.getElementById('incontainer').style.transition='all ease-in-out 5s'},300);
-  window.setTimeout(function(){document.getElementById('incontainer').style.backgroundSize=(bgx*1.25)+'px '+(bgy*1.25)+'px'},400);
+    document.getElementById('loadcontainer').style.display='none';
+    document.getElementById('incontainer').style.backgroundSize=bgx+'px '+bgy+'px';
+    document.getElementById('glowlogo').style.display='none';
+    document.getElementById('incontainer').style.display='block';
+    window.setTimeout(function(){document.getElementById('incontainer').style.opacity=1},100);
+    window.setTimeout(function(){document.getElementById('incontainer').style.transition='all ease-in-out 5s'},300);
+    window.setTimeout(function(){document.getElementById('incontainer').style.backgroundSize=(bgx*1.25)+'px '+(bgy*1.25)+'px'},400);
 }
 
 function changebgsizes(){
@@ -195,7 +195,7 @@ function changebgsizes(){
      document.getElementById('contaboutus').style.minHeight=document.getElementById('maincontainer').clientHeight+'px';
      document.getElementById('contproject').style.minHeight=document.getElementById('maincontainer').clientHeight+'px';
      document.getElementById('contcontact').style.minHeight=document.getElementById('maincontainer').clientHeight+'px';
-    winheight=scrollmaincontainer+document.getElementById('maincontainer').clientHeight;
+     winheight=scrollmaincontainer+document.getElementById('maincontainer').clientHeight;
   }
  
   
