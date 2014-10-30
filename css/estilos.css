@@ -1,0 +1,238 @@
+@font-face{
+  font-family: "fira";
+  src: url('../Fonts/site/firasans-semibold-webfont.ttf'), url('../Fonts/site/firasans-semibold-webfont.woff'), url('Fonts/site/firasans-semibold-webfont.eot'), url('Fonts/site/firasans-semibold-webfont.svg');
+}
+@font-face{
+  font-family: "league";
+  src: url('../Fonts/menu/leaguegothic-regular-webfont.ttf'), url('../Fonts/site/leaguegothic-regular-webfont.woff'), url('Fonts/site/leaguegothic-regular-webfont.eot'), url('Fonts/site/leaguegothic-regular-webfont.svg');
+}
+
+	body{
+		margin:0px;
+		font-size: 16px;
+		background:#DDD;
+    font-family: "fira";
+	}
+	.row{
+		max-width: 125em;
+	}
+
+
+    #owl-demo .item img{
+    display: block;
+    width: 100%;
+    height: auto;
+    }
+    #owl-demo .item{
+    	text-align: center;
+    }
+
+    .topbar{
+    	background-image: url('../img/topbarbg.png');
+      position: relative;
+      z-index: 10000;
+      padding-bottom: 0.4rem;
+      box-shadow: 0px 3px 4px rgba(0,0,0,0.5);
+    }
+
+    .topopt{
+    	position: relative;
+    	top: 1.3em;
+    }
+    .topicons{
+      font-size: 4em;
+      color: #FFF;
+      background: none;
+      padding: 0.1em 0.3em 0.1em 0.3em;
+      position: relative;
+      top: -20px;
+      margin-bottom: 0.3rem;
+    }
+    .topicons:hover{
+      background: none;
+    }
+    .toplogo{
+      margin:0.1em 0em 0em 0.1em;
+    }
+    .menubtn{
+      position: fixed;
+      top:0.1rem;
+      right: -0.1rem;
+      display: none;
+      cursor: pointer;
+    }
+    .btnphone{
+      text-align: right;
+    }
+    .menuphones{
+    position: fixed;
+    background:url('../img/circleanim.png');
+    background-size: 3rem;
+    background-repeat: no-repeat;
+    background-position:top right; 
+    height: 0rem;
+    top: 4.5rem;
+    z-index: 10500;
+    display: none;
+    text-align: right;
+    transition: all ease-in-out 1s;
+    -webkit-transition: all ease-in-out 1s;
+    box-shadow: 0px 0px 0px rgba(0,0,0,0);
+  }
+
+.contentstyle{
+  text-align: center;
+}
+.contentstyle p{
+  text-align: left;
+}
+
+
+.menuphoneslist{
+  color: #444;
+  font-size: 1.75rem;
+  padding-bottom: 0.35rem;
+  padding-top: 0.35rem;
+  display: none;
+  opacity: 0;
+  transition:all ease-in-out 400ms;
+  border-bottom: 2px solid #CCC;
+  -webkit-transition:all ease-in-out 400ms;
+}
+
+.menuphoneslist span{
+  font-family: "league";
+}
+.menuphoneslist:hover{
+  color: #FFF;
+  background: #444;
+}
+.contentlist{
+  text-align: left;
+}
+.container{
+  background:#555555;
+  width: 100%;
+  height: auto;
+}
+.maincontainer{
+  width: 100%;
+  height: 100%;
+  background: #232323;
+  box-shadow: 0px 0px 30px rgba(0,0,0,0.5) inset;
+  text-align: center;
+  overflow: hidden;
+  vertical-align: middle;
+}
+.incontainer{
+  background: url('../img/spacebg.png');
+  background-position: center;
+  background-size: 100% 100%;
+  opacity:0;
+  width: 100%;
+  height:100%;
+  transition: all ease-in-out 500ms;
+  -webkit-transition: all ease-in-out 500ms;
+  display:none;
+}
+.barseparator{
+  height: 5.5rem;
+  display: none;
+}
+
+.glowlogo{
+  width: 30%;
+  height: auto;
+  position: relative;
+}
+.loader{
+  text-align: center;
+}
+.gifload{
+  position: relative;
+  transition: all ease-in-out 1s;
+  -webkit-transition: all ease-in-out 1s;
+}
+.arrowdown{
+  cursor: pointer;
+  width: 7.5%;
+  height: auto;
+}
+.aboutus{
+  min-height: 500px;
+  height: auto;
+  box-shadow: 0px 0px 30px rgba(0,0,0,0.5) inset;
+  background: url('../img/bg1.png');
+  background-repeat: no-repeat;;
+  background-size: 100% 100%;
+  width: 100%;
+  position: relative;
+  color: #FFFFFF;
+  
+  text-align: center;
+}
+p{font-size: 1.6rem;}
+h4{color:#FFF;font-size: 1.8rem;}
+a{color:#FF6600;}
+.project{
+  min-height: 500px;
+  height: auto;
+  box-shadow: 0px 0px 30px rgba(0,0,0,0.5) inset;
+  background: url('../img/bg2.png');
+  background-repeat: no-repeat;;
+  background-size: 100% 100%;
+  width: 100%;
+  color: #FFFFFF;
+}
+
+.contact{
+  min-height: 500px;
+  height: auto;
+  box-shadow: 0px 0px 30px rgba(0,0,0,0.5) inset;
+  background: url('../img/bg3.png');
+  background-repeat: no-repeat;;
+  background-size: 100% 100%;
+  width: 100%;
+  color: #FFFFFF;
+}
+
+@media all and (max-width: 1024px){
+    .topopt{display: none;}
+    .menubtn{display:block;}
+    .toplogo{height: 4rem;}
+}
+
+@media all and (max-width: 1024px){
+    .menuphones{
+      height: auto;
+      display: none;
+    }
+    .glowlogo{
+      width: 15rem;
+    }
+    .arrowdown{
+      width: 10%;
+    }
+    p{font-size: 1rem;}
+  h4{color:#FFF;font-size: 1.3rem;}
+  
+}
+
+@media all and (min-width: 1024px){
+    .menuphoneslist{
+      display: none;
+      font-size:0rem;
+    }
+}
+
+    @media all and (max-width: 500px){
+    .toplogo{
+      height: 3rem;
+    }
+    p{font-size: 0.8rem;}
+  h4{color:#FFF;font-size: 1rem;}
+    .menuphones{top:3.5rem;}
+    .arrowdown{
+      width: 15%;
+    }
+}
